@@ -6,7 +6,8 @@ import Data.Semigroup ((<>))
 import Data.Version
 import System.Taffybar
 import System.Taffybar.Context
-import My.Taffy
+-- import My.Taffy
+import System.Taffybar.Example
 import Text.Printf
 
 

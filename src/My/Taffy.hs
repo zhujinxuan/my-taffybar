@@ -91,7 +91,7 @@ exampleTaffybarConfig =
           , mpris2New
           ]
         , barPosition = Top
-        , barPadding = 0
+        , barPadding = 10
         , barHeight = 50
         , widgetSpacing = 0
         }
