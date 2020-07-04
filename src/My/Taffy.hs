@@ -78,7 +78,8 @@ exampleTaffybarConfig =
       -- for a better way to set up the sni tray
       tray = sniTrayThatStartsWatcherEvenThoughThisIsABadWayToDoIt
       myConfig = defaultSimpleTaffyConfig
-        { startWidgets =
+        {  monitorsAction = useAllMonitors
+         , startWidgets =
             workspaces : map (>>= buildContentsBox) [ layout, windowsW ]
         , endWidgets = map (>>= buildContentsBox)
           [ batteryIconNew
@@ -90,7 +91,7 @@ exampleTaffybarConfig =
           , mpris2New
           ]
         , barPosition = Top
-        , barPadding = 10
+        , barPadding = 0
         , barHeight = 50
         , widgetSpacing = 0
         }
